@@ -38,29 +38,33 @@ A smart contract similarity tool that returns the top 5 similar contracts for a 
 
 ## Usage
 
-A. To test the model via the API and apply the model on a randomly selected contract, execute the following command:
+1. To test the model via the API and apply the model on a randomly selected contract, execute the following command:
     ```
     $ python test_api.py
     ```
-To test the model via the API on a specific contract, use this command:
+
+- To test the model via the API on a specific contract, use this command:
+
     ```
     $ python test_api.py {PATH_TO_CONTRACT}
     ```
 
-B. To test the model outside of the API, the sentence transformers module needs to be installed
+2. To test the model outside of the API, the sentence transformers module needs to be installed
     ```
     $ pip install sentence-transformers
     ```
-Then execute the following command for a random input contract selection:
+
+- Then execute the following command for a random input contract selection:
     ```
     $ python test_model.py
     ```
-or the following command to apply the model on a selected contract
+
+- or the following command to apply the model on a selected contract
     ```
     $ python test_model.py {PATH_TO_CONTRACT}
     ```
 
-C. Alternatively, copy-paste the following code to your Python script, fill in the wanted path to contract and execute the script.
+3. Alternatively, copy-paste the following code to your Python script, fill in the wanted path to contract and execute the script.
 
 ```
 import requests
