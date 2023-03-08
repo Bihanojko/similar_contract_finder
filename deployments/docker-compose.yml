@@ -1,0 +1,14 @@
+version: "2"
+services:
+  app:
+    container_name: similar-contract-finder-app
+    build:
+      context: ../
+      dockerfile: deployments/app/Dockerfile
+    ports:
+      - "4500:5000"
+  web:
+    build:
+      context: ../
+      dockerfile: deployments/app/Dockerfile
+    image: bihanojko/similar-contract-finder:latest
